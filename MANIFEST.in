@@ -1,0 +1,4 @@
+include README.md
+recursive-include octoprint_yonotifier/templates *
+recursive-include octoprint_yonotifier/translations *
+recursive-include octoprint_yonotifier/static *
