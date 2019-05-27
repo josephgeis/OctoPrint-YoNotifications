@@ -1,6 +1,6 @@
 # OctoPrint-YoNotifications
 
-**TODO:** Describe what your plugin does.
+Send OctoPrint Notifications using Yo.
 
 ## Setup
 
@@ -9,9 +9,20 @@ or manually using this URL:
 
     https://github.com/juniorrubyist/OctoPrint-YoNotifications/archive/master.zip
 
-**TODO:** Describe how to install your plugin, if more needs to be done than just installing it via pip or through
-the plugin manager.
-
 ## Configuration
 
-**TODO:** Describe your plugin's configuration options (if any).
+**TODO:**
+
+```yaml
+yonotifier:
+  apiKey: xxxxxxx
+  [Event]:
+    enabled: true
+    message: An event happened. {{ parameter }}
+  username: MYUSERNAME
+```
+
+- `apiKey` - Your API Key found on [Yo Dashboard](https://dashboard.justyo.co/).
+- `[Event]` - Replace with event name found in [OctoPrint Docs](http://docs.octoprint.org/en/master/events/index.html#available-events).
+- `enabled` - Whether to use this event or not (`true` or `false`).
+- `username` - Your Yo username.
